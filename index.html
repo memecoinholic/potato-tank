@@ -1,0 +1,843 @@
+<!DOCTYPE html><html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Potato Tank</title>
+<meta name="description" content="One potato is ordinary. Thousands of potatoes become an unstoppable army. Now we're rolling on Solana. Join the Potato Army. 🥔⚔️">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Potato Army Together Strong.">
+<meta property="og:url" content="https://POTATO TANKonhood.com/">
+<meta property="og:title" content="Potato Army Together Strong.">
+<meta property="og:description" content="One potato is ordinary. Thousands of potatoes become an unstoppable army. Now we're rolling on Solana. Join the Potato Army. 🥔⚔️">
+<meta property="og:image" content="images/og-preview.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="An army of Potatoes rolling into battle.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@POTATO TANKOnHood">
+<meta name="twitter:title" content="Potato Army Together Strong.">
+<meta name="twitter:description" content="One potato is ordinary. Thousands of potatoes become an unstoppable army. Now we're rolling on Solana. Join the Potato Army. 🥔⚔️">
+<meta name="twitter:image" content="https://POTATO TANKonhood.com/assets/og-preview.webp">
+<meta name="theme-color" content="#B79268">
+<script src="js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Potato Tank</title>
+<meta name="description" content="One potato is ordinary. Thousands of potatoes become an unstoppable army. Now we're rolling on Solana. Join the Potato Army. 🥔⚔️">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Potato Army Together Strong.">
+<meta property="og:url" content="https://POTATO TANKonhood.com/">
+<meta property="og:title" content="Potato Army Together Strong.">
+<meta property="og:description" content="One potato is ordinary. Thousands of potatoes become an unstoppable army. Now we're rolling on Solana. Join the Potato Army. 🥔⚔️">
+<meta property="og:image" content="images/og-preview.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="An army of Potatoes rolling into battle.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@POTATO TANKOnHood">
+<meta name="twitter:title" content="Potato Army Together Strong.">
+<meta name="twitter:description" content="One potato is ordinary. Thousands of potatoes become an unstoppable army. Now we're rolling on Solana. Join the Potato Army. 🥔⚔️">
+<meta name="twitter:image" content="https://POTATO TANKonhood.com/assets/og-preview.webp">
+<meta name="theme-color" content="#B79268">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Bagel+Fat+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+@font-face { font-family: 'Storm Gust'; src: url('fonts/StormGust.ttf') format('truetype'); font-display: swap; }
+html { scroll-behavior: smooth; scroll-padding-top: 124px; }
+html, body, * { cursor: url('images/cursor-hand.png') 15 1, auto; }
+a, button, [role="button"], label { cursor: url('images/cursor-hand.png') 15 1, pointer; }
+input, textarea { cursor: url('images/cursor-hand.png') 15 1, text; }
+body::after { content: ''; position: fixed; width: 1px; height: 1px; top: -10px; left: -10px; background: url('images/cursor-hand.png') no-repeat; }
+body { margin: 0; overscroll-behavior-y: none; background: #F6F2E8; color: #111; font-family: 'Bagel Fat One', cursive; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: #1E3FD8; text-decoration: none; }
+a:hover { color: #2FA84F; }
+::selection { background: #B79268; color: #111; }
+@keyframes introWordFill { from { color: rgba(255, 255, 255, .3); -webkit-text-stroke-color: rgba(17, 17, 17, .18); } to { color: #FFFFFF; -webkit-text-stroke-color: #111; } }
+@keyframes menuIn { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes menuItemIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes headSpin { to { transform: rotate(360deg); } }
+@keyframes loaderPulse { 0%, 100% { transform: scaleX(1); } 50% { transform: scaleX(1.35); } }
+@keyframes heroIn { from { opacity: 0; transform: translateY(26px) scale(.96); } to { opacity: 1; transform: none; } }
+[data-hero] { animation: heroIn .85s cubic-bezier(.2, .8, .25, 1) both; animation-play-state: paused; }
+body[data-ready="1"] [data-hero] { animation-play-state: running; }
+@keyframes POTATO TANKMarquee { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+@keyframes bananaSway {
+  0%   { transform: rotate(-10deg); animation-timing-function: cubic-bezier(.37, 0, .63, 1); }
+  30%  { transform: rotate(14deg);  animation-timing-function: cubic-bezier(.33, 0, .67, 1); }
+  55%  { transform: rotate(-6deg);  animation-timing-function: cubic-bezier(.37, 0, .63, 1); }
+  78%  { transform: rotate(9deg);   animation-timing-function: cubic-bezier(.33, 0, .67, 1); }
+  100% { transform: rotate(-10deg); }
+}
+@keyframes apedSkeleton { 0%, 100% { opacity: .35; } 50% { opacity: .8; } }
+@keyframes apedFloat { 0%, 100% { transform: translateY(-10px); } 50% { transform: translateY(14px); } }
+@media (max-width: 899px) { header nav { background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } #intro-copy, #intro-copy [data-word] { color: #FFFFFF !important; -webkit-text-stroke-color: #111 !important; } [data-hero] { animation: none !important; opacity: 1 !important; } [data-step] { transform: none !important; transition: none !important; } }
+</style>
+</helmet>
+
+<div style="position: relative; width: 100%; overflow-x: clip;">
+
+  <div aria-hidden="true" style="position: fixed; inset: 0; z-index: 0; background-image: url('images/hero-bg.webp'); background-size: cover; background-position: center bottom; background-repeat: no-repeat;"></div>
+
+  <header data-hero="" style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: {{ headerPad }}; animation-delay: .55s;">
+    <nav data-nav="" style="position: relative; max-width: 1280px; margin: 0 auto; background: {{ navBg }}; border: {{ navBorder }}; border-radius: 4px; box-shadow: {{ navShadow }}; padding: {{ navPad }}; transform-origin: center top; transition: transform .34s cubic-bezier(.34, 1.5, .64, 1), box-shadow .3s ease; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; flex: 0 0 auto;">
+        <img src="images/logo.png" alt="APED, a gorilla in a blue suit wearing black shades" style="width: 48px; height: 48px; border-radius: 50%; border: 3px solid #111; display: block; object-fit: cover;">
+      </a>
+
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; align-items: center; gap: clamp(18px, 3vw, 44px);">
+          <a href="#intro" style="font-family: 'Erica One', cursive; font-size: 17px; color: #111; letter-spacing: 1px; padding-bottom: 3px; border-bottom: 2px solid transparent;" style-hover="color: #1E3FD8;">lore</a>
+          <a href="#POTATANK TOKENOMICS" style="font-family: 'Erica One', cursive; font-size: 17px; color: #111; letter-spacing: 1px; padding-bottom: 3px; border-bottom: 2px solid transparent;" style-hover="color: #1E3FD8;">POTATANK TOKENOMICS</a>
+          <a href="#memes" style="font-family: 'Erica One', cursive; font-size: 17px; color: #111; letter-spacing: 1px; padding-bottom: 3px; border-bottom: 2px solid transparent;" style-hover="color: #1E3FD8;">memes</a>
+          <a href="#how-to-buy" style="font-family: 'Erica One', cursive; font-size: 17px; color: #111; letter-spacing: 1px; padding-bottom: 3px; border-bottom: 2px solid transparent;" style-hover="color: #1E3FD8;">how to buy</a>
+          <a href="#join" style="font-family: 'Erica One', cursive; font-size: 17px; color: #111; letter-spacing: 1px; padding-bottom: 3px; border-bottom: 2px solid transparent;" style-hover="color: #1E3FD8;">join us</a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; flex: 0 0 auto; padding-right: 6px;">
+          <a href="{{ xUrl }}" target="_blank" rel="noopener" aria-label="APED on X" title="x / twitter" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; transition: transform .15s ease;" style-hover="transform: translateY(-2px) rotate(-4deg);" style-focus="outline: 3px solid #111; outline-offset: 2px;">
+            <svg width="17" height="17" viewBox="0 0 16 16" aria-hidden="true" style="display: block; fill: #111;"><path d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z"></path></svg>
+          </a>
+          <a href="{{ chartUrl }}" target="_blank" rel="noopener" aria-label="APED on dexscreener" title="dexscreener" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; transition: transform .15s ease;" style-hover="transform: translateY(-2px) rotate(-4deg);" style-focus="outline: 3px solid #111; outline-offset: 2px;">
+            <svg width="18" height="18" viewBox="0 0 252 300" aria-hidden="true" style="display: block; fill: #111; fill-rule: evenodd;"><path d="M151.818 106.866c9.177-4.576 20.854-11.312 32.545-20.541 2.465 5.119 2.735 9.586 1.465 13.193-.9 2.542-2.596 4.753-4.826 6.512-2.415 1.901-5.431 3.285-8.765 4.033-6.326 1.425-13.712.593-20.419-3.197m1.591 46.886l12.148 7.017c-24.804 13.902-31.547 39.716-39.557 64.859-8.009-25.143-14.753-50.957-39.556-64.859l12.148-7.017a5.95 5.95 0 003.84-5.845c-1.113-23.547 5.245-33.96 13.821-40.498 3.076-2.342 6.434-3.518 9.747-3.518s6.671 1.176 9.748 3.518c8.576 6.538 14.934 16.951 13.821 40.498a5.95 5.95 0 003.84 5.845zM126 0c14.042.377 28.119 3.103 40.336 8.406 8.46 3.677 16.354 8.534 23.502 14.342 3.228 2.622 5.886 5.155 8.814 8.071 7.897.273 19.438-8.5 24.796-16.709-9.221 30.23-51.299 65.929-80.43 79.589-.012-.005-.02-.012-.029-.018-5.228-3.992-11.108-5.988-16.989-5.988s-11.76 1.996-16.988 5.988c-.009.005-.017.014-.029.018-29.132-13.66-71.209-49.359-80.43-79.589 5.357 8.209 16.898 16.982 24.795 16.709 2.929-2.915 5.587-5.449 8.814-8.071C69.31 16.94 77.204 12.083 85.664 8.406 97.882 3.103 111.959.377 126 0m-25.818 106.866c-9.176-4.576-20.854-11.312-32.544-20.541-2.465 5.119-2.735 9.586-1.466 13.193.901 2.542 2.597 4.753 4.826 6.512 2.416 1.901 5.432 3.285 8.766 4.033 6.326 1.425 13.711.593 20.418-3.197"></path><path d="M197.167 75.016c6.436-6.495 12.107-13.684 16.667-20.099l2.316 4.359c7.456 14.917 11.33 29.774 11.33 46.494l-.016 26.532.14 13.754c.54 33.766 7.846 67.929 24.396 99.193l-34.627-27.922-24.501 39.759-25.74-24.231L126 299.604l-41.132-66.748-25.739 24.231-24.501-39.759L0 245.25c16.55-31.264 23.856-65.427 24.397-99.193l.14-13.754-.016-26.532c0-16.721 3.873-31.578 11.331-46.494l2.315-4.359c4.56 6.415 10.23 13.603 16.667 20.099l-2.01 4.175c-3.905 8.109-5.198 17.176-2.156 25.799 1.961 5.554 5.54 10.317 10.154 13.953 4.48 3.531 9.782 5.911 15.333 7.161 3.616.814 7.3 1.149 10.96 1.035-.854 4.841-1.227 9.862-1.251 14.978L53.2 160.984l25.206 14.129a41.926 41.926 0 015.734 3.869c20.781 18.658 33.275 73.855 41.861 100.816 8.587-26.961 21.08-82.158 41.862-100.816a41.865 41.865 0 015.734-3.869l25.206-14.129-32.665-18.866c-.024-5.116-.397-10.137-1.251-14.978 3.66.114 7.344-.221 10.96-1.035 5.551-1.25 10.854-3.63 15.333-7.161 4.613-3.636 8.193-8.399 10.153-13.953 3.043-8.623 1.749-17.689-2.155-25.799l-2.01-4.175z"></path></svg>
+          </a>
+          <a href="{{ tgUrl }}" target="_blank" rel="noopener" aria-label="APED on Telegram" title="telegram" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; transition: transform .15s ease;" style-hover="transform: translateY(-2px) rotate(4deg);" style-focus="outline: 3px solid #111; outline-offset: 2px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="display: block; fill: #111;"><path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"></path></svg>
+          </a>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button type="button" aria-label="{{ menuLabel }}" aria-expanded="{{ menuOpen }}" onclick="{{ toggleMenu }}" style="flex: 0 0 auto; width: 52px; height: 46px; background: #F5F1E8; border: 3px solid #111; border-radius: 12px 6px 14px 5px / 5px 14px 6px 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer;" style-focus="outline: 3px solid #111; outline-offset: 3px;">
+          <span style="display: block; width: 24px; height: 3px; background: #111; transition: transform .28s cubic-bezier(.34, 1.4, .64, 1), opacity .18s ease; transform: {{ burgerTop }};"></span>
+          <span style="display: block; width: 24px; height: 3px; background: #111; transition: opacity .18s ease; opacity: {{ burgerMidOpacity }};"></span>
+          <span style="display: block; width: 24px; height: 3px; background: #111; transition: transform .28s cubic-bezier(.34, 1.4, .64, 1); transform: {{ burgerBottom }};"></span>
+        </button>
+      </sc-if>
+    </nav>
+
+  </header>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; inset: 0; z-index: 1001; background: #F5F1E8; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(20px, 4vh, 34px); padding: 96px 24px 48px; box-sizing: border-box; text-align: center; animation: menuIn .3s cubic-bezier(.2, .8, .25, 1) both; overflow-y: auto;">
+      <button type="button" onclick="{{ closeMenu }}" aria-label="close menu" style="position: absolute; top: 20px; right: 20px; width: 52px; height: 52px; background: #B79268; border: 3px solid #111; border-radius: 12px 6px 14px 5px / 5px 14px 6px 12px; box-shadow: 4px 4px 0 #111; display: flex; align-items: center; justify-content: center; cursor: pointer;" style-active="transform: translate(3px, 3px); box-shadow: 1px 1px 0 #111;" style-focus="outline: 3px solid #1E3FD8; outline-offset: 3px;">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="display: block;"><path d="M5 5 L19 19 M19 5 L5 19" stroke="#111" stroke-width="3.4" stroke-linecap="round" fill="none"></path></svg>
+      </button>
+      <a href="#intro" onclick="{{ closeMenu }}" style="font-family: 'Erica One', cursive; font-size: clamp(34px, 10vw, 56px); line-height: 1; letter-spacing: 1px; color: #111; animation: menuItemIn .4s cubic-bezier(.2, .8, .25, 1) 0.05s both;">lore</a>
+      <a href="#POTATANK TOKENOMICS" onclick="{{ closeMenu }}" style="font-family: 'Erica One', cursive; font-size: clamp(34px, 10vw, 56px); line-height: 1; letter-spacing: 1px; color: #111; animation: menuItemIn .4s cubic-bezier(.2, .8, .25, 1) 0.1s both;">POTATANK TOKENOMICS</a>
+      <a href="#memes" onclick="{{ closeMenu }}" style="font-family: 'Erica One', cursive; font-size: clamp(34px, 10vw, 56px); line-height: 1; letter-spacing: 1px; color: #111; animation: menuItemIn .4s cubic-bezier(.2, .8, .25, 1) 0.15s both;">memes</a>
+      <a href="#how-to-buy" onclick="{{ closeMenu }}" style="font-family: 'Erica One', cursive; font-size: clamp(34px, 10vw, 56px); line-height: 1; letter-spacing: 1px; color: #111; animation: menuItemIn .4s cubic-bezier(.2, .8, .25, 1) 0.2s both;">how to buy</a>
+      <a href="#join" onclick="{{ closeMenu }}" style="font-family: 'Erica One', cursive; font-size: clamp(34px, 10vw, 56px); line-height: 1; letter-spacing: 1px; color: #111; animation: menuItemIn .4s cubic-bezier(.2, .8, .25, 1) 0.25s both;">join us</a>
+      <a href="{{ buyUrl }}" onclick="{{ closeMenu }}" style="margin-top: clamp(8px, 2vh, 18px); background: #B79268; color: #111; border: 4px solid #111; border-radius: 18px 7px 20px 6px / 6px 20px 7px 18px; padding: 20px 44px 18px; font-family: 'Erica One', cursive; font-size: clamp(24px, 7vw, 36px); letter-spacing: 1px; line-height: 1; box-shadow: 7px 7px 0 #111; animation: menuItemIn .4s cubic-bezier(.2, .8, .25, 1) .3s both;">BUY $POTATANK</a>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 16px; animation: menuItemIn .4s cubic-bezier(.2, .8, .25, 1) .35s both;">
+        <a href="{{ xUrl }}" target="_blank" rel="noopener" aria-label="APED on X" style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border: 3px solid #111; border-radius: 50%; background: #B79268; box-shadow: 4px 4px 0 #111;"><svg width="22" height="22" viewBox="0 0 16 16" aria-hidden="true" style="display: block; fill: #111;"><path d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z"></path></svg></a>
+        <a href="{{ chartUrl }}" target="_blank" rel="noopener" aria-label="APED on dexscreener" style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border: 3px solid #111; border-radius: 50%; background: #B79268; box-shadow: 4px 4px 0 #111;"><svg width="23" height="23" viewBox="0 0 252 300" aria-hidden="true" style="display: block; fill: #111; fill-rule: evenodd;"><path d="M151.818 106.866c9.177-4.576 20.854-11.312 32.545-20.541 2.465 5.119 2.735 9.586 1.465 13.193-.9 2.542-2.596 4.753-4.826 6.512-2.415 1.901-5.431 3.285-8.765 4.033-6.326 1.425-13.712.593-20.419-3.197m1.591 46.886l12.148 7.017c-24.804 13.902-31.547 39.716-39.557 64.859-8.009-25.143-14.753-50.957-39.556-64.859l12.148-7.017a5.95 5.95 0 003.84-5.845c-1.113-23.547 5.245-33.96 13.821-40.498 3.076-2.342 6.434-3.518 9.747-3.518s6.671 1.176 9.748 3.518c8.576 6.538 14.934 16.951 13.821 40.498a5.95 5.95 0 003.84 5.845zM126 0c14.042.377 28.119 3.103 40.336 8.406 8.46 3.677 16.354 8.534 23.502 14.342 3.228 2.622 5.886 5.155 8.814 8.071 7.897.273 19.438-8.5 24.796-16.709-9.221 30.23-51.299 65.929-80.43 79.589-.012-.005-.02-.012-.029-.018-5.228-3.992-11.108-5.988-16.989-5.988s-11.76 1.996-16.988 5.988c-.009.005-.017.014-.029.018-29.132-13.66-71.209-49.359-80.43-79.589 5.357 8.209 16.898 16.982 24.795 16.709 2.929-2.915 5.587-5.449 8.814-8.071C69.31 16.94 77.204 12.083 85.664 8.406 97.882 3.103 111.959.377 126 0m-25.818 106.866c-9.176-4.576-20.854-11.312-32.544-20.541-2.465 5.119-2.735 9.586-1.466 13.193.901 2.542 2.597 4.753 4.826 6.512 2.416 1.901 5.432 3.285 8.766 4.033 6.326 1.425 13.711.593 20.418-3.197"></path><path d="M197.167 75.016c6.436-6.495 12.107-13.684 16.667-20.099l2.316 4.359c7.456 14.917 11.33 29.774 11.33 46.494l-.016 26.532.14 13.754c.54 33.766 7.846 67.929 24.396 99.193l-34.627-27.922-24.501 39.759-25.74-24.231L126 299.604l-41.132-66.748-25.739 24.231-24.501-39.759L0 245.25c16.55-31.264 23.856-65.427 24.397-99.193l.14-13.754-.016-26.532c0-16.721 3.873-31.578 11.331-46.494l2.315-4.359c4.56 6.415 10.23 13.603 16.667 20.099l-2.01 4.175c-3.905 8.109-5.198 17.176-2.156 25.799 1.961 5.554 5.54 10.317 10.154 13.953 4.48 3.531 9.782 5.911 15.333 7.161 3.616.814 7.3 1.149 10.96 1.035-.854 4.841-1.227 9.862-1.251 14.978L53.2 160.984l25.206 14.129a41.926 41.926 0 015.734 3.869c20.781 18.658 33.275 73.855 41.861 100.816 8.587-26.961 21.08-82.158 41.862-100.816a41.865 41.865 0 015.734-3.869l25.206-14.129-32.665-18.866c-.024-5.116-.397-10.137-1.251-14.978 3.66.114 7.344-.221 10.96-1.035 5.551-1.25 10.854-3.63 15.333-7.161 4.613-3.636 8.193-8.399 10.153-13.953 3.043-8.623 1.749-17.689-2.155-25.799l-2.01-4.175z"></path></svg></a>
+        <a href="{{ tgUrl }}" target="_blank" rel="noopener" aria-label="APED on Telegram" style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border: 3px solid #111; border-radius: 50%; background: #B79268; box-shadow: 4px 4px 0 #111;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="display: block; fill: #111;"><path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"></path></svg></a>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ showLoader }}" hint-placeholder-val="{{ true }}">
+    <div style="position: fixed; inset: 0; z-index: 999; background: #B79268; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: {{ loaderOpacity }}; transition: opacity .55s ease; pointer-events: {{ loaderPointer }};">
+      <img src="images/head.png" alt="" aria-hidden="true" style="width: clamp(120px, 16vw, 210px); height: auto; display: block; animation: headSpin .55s linear infinite;">
+    </div>
+  </sc-if>
+
+  <audio ref="{{ audioRef }}" src="media/soundtrack.mp3" loop="{{ true }}" preload="auto"></audio>
+
+  <button type="button" onclick="{{ toggleMute }}" aria-label="{{ muteLabel }}" title="{{ muteLabel }}" style="position: fixed; right: clamp(16px, 2vw, 28px); bottom: {{ muteBottom }}; transition: bottom .2s ease; z-index: 200; width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; background: #B79268; border: 3px solid #111; border-radius: 4px; box-shadow: 5px 5px 0 #111; cursor: pointer; transition: transform .15s ease;" style-hover="transform: translate(-1px, -2px); box-shadow: 6px 7px 0 #111;" style-active="transform: translate(3px, 3px); box-shadow: 2px 2px 0 #111;" style-focus="outline: 3px solid #1E3FD8; outline-offset: 3px;">
+    <sc-if value="{{ soundOn }}" hint-placeholder-val="{{ true }}">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="display: block;"><polygon points="3,9 7,9 12,4.5 12,19.5 7,15 3,15" fill="#111"></polygon><path d="M15.5 8.5 C17.6 10.4 17.6 13.6 15.5 15.5 M18.5 6 C22 9 22 15 18.5 18" fill="none" stroke="#111" stroke-width="2.2" stroke-linecap="round"></path></svg>
+    </sc-if>
+    <sc-if value="{{ soundOff }}" hint-placeholder-val="{{ false }}">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="display: block;"><polygon points="3,9 7,9 12,4.5 12,19.5 7,15 3,15" fill="#111"></polygon><path d="M16 9 L22 15 M22 9 L16 15" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round"></path></svg>
+    </sc-if>
+  </button>
+
+  <main id="top" style="position: relative; z-index: 1;">
+
+    <section data-screen-label="hero" style="position: relative; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: max(17vh, 140px) 24px 6vh; box-sizing: border-box;">
+      <h1 data-hero="" style="margin: 0; text-align: center; line-height: .84; animation-delay: .08s;">
+        <span style="display: block; font-family: 'Erica One', cursive; font-size: clamp(114px, 24.5vw, 348px); color: #FBFAF6; letter-spacing: 0.03em; -webkit-text-stroke: {{ heroStroke }} #111; paint-order: stroke fill; text-shadow: .03em .04em 0 #111">THE TANK</span>
+        <span style="display: block; margin-top: .45em; font-family: 'Storm Gust', 'Permanent Marker', cursive; font-size: clamp(30px, 6.4vw, 92px); color: #B79268; letter-spacing: 3.5px; transform: skewX(-9deg); -webkit-text-stroke: .035em #111; paint-order: stroke fill; text-shadow: {{ subShadow }} #111">IS POTATO TANK!</span>
+      </h1>
+
+      <div data-hero="" style="margin-top: {{ heroCtaTop }}; display: flex; flex-direction: column; align-items: center; gap: 14px; animation-delay: .42s;">
+        
+      <a href="{{ buyUrl }}" style="background: #B79268; color: #111; border: 3px solid #111; border-radius: 14px 6px 16px 5px / 5px 16px 6px 14px; padding: {{ heroCtaPad }}; font-family: 'Erica One', cursive; font-size: {{ heroCtaSize }}; letter-spacing: 1px; line-height: 1; box-shadow: 5px 5px 0 #111; transition: transform .15s ease, color .15s ease;" style-hover="transform: rotate(-1.5deg) translateY(-2px); color: #1E3FD8;" style-focus="outline: 3px solid #B79268; outline-offset: 4px;">BUY $POTATANK</a></div>
+    </section>
+
+    <section id="intro" data-screen-label="intro" style="position: relative; padding: clamp(110px, 16vh, 190px) 24px clamp(140px, 20vh, 230px);">
+      <p id="intro-copy" style="max-width: 700px; margin: 0 auto; text-align: center; font-size: {{ loreSize }}; line-height: 1.6; color: rgba(255, 255, 255, .3); -webkit-text-stroke: {{ loreStroke }} rgba(17, 17, 17, .18); paint-order: stroke fill; view-timeline-name: --introText; view-timeline-axis: block;"><span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 14.0% cover 28.0%;">in</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 14.7% cover 28.7%;">2026</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 15.5% cover 29.5%;">a</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 16.2% cover 30.2%;">pile</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 17.0% cover 31.0%;">of</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 17.7% cover 31.7%;">nobodies</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 18.5% cover 32.5%;">with</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 19.2% cover 33.2%;">a</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 19.9% cover 33.9%;">broker</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 20.7% cover 34.7%;">app</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 21.4% cover 35.4%;">and</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 22.2% cover 36.2%;">no</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 22.9% cover 36.9%;">exit</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 23.6% cover 37.6%;">plan</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 24.4% cover 38.4%;">looked</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 25.1% cover 39.1%;">at</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 25.9% cover 39.9%;">wall</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 26.6% cover 40.6%;">street</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 27.4% cover 41.4%;">and</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 28.1% cover 42.1%;">decided</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 28.8% cover 42.8%;">they</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 29.6% cover 43.6%;">liked</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 30.3% cover 44.3%;">the</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 31.1% cover 45.1%;">stock.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 31.8% cover 45.8%;">no</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 32.5% cover 46.5%;">thesis.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 33.3% cover 47.3%;">no</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 34.0% cover 48.0%;">risk</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 34.8% cover 48.8%;">management.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 35.5% cover 49.5%;">just</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 36.3% cover 50.3%;">conviction</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 37.0% cover 51.0%;">and</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 37.7% cover 51.7%;">each</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 38.5% cover 52.5%;">other.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 39.2% cover 53.2%;">they</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 40.0% cover 54.0%;">called</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 40.7% cover 54.7%;">it</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 41.5% cover 55.5%;">dumb</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 42.2% cover 56.2%;">money.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 42.9% cover 56.9%;">they</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 43.7% cover 57.7%;">were</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 44.4% cover 58.4%;">right,</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 45.2% cover 59.2%;">and</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 45.9% cover 59.9%;">it</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 46.6% cover 60.6%;">didn't</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 47.4% cover 61.4%;">matter.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 48.1% cover 62.1%;">POTATO TANK</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 48.9% cover 62.9%;">together</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 49.6% cover 63.6%;">strong.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 50.4% cover 64.4%;">now</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 51.1% cover 65.1%;">we're</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 51.8% cover 65.8%;">on</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 52.6% cover 66.6%;">robinhood</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 53.3% cover 67.3%;">chain,</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 54.1% cover 68.1%;">the</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 54.8% cover 68.8%;">chain</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 55.5% cover 69.5%;">of</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 56.3% cover 70.3%;">POTATO TANK.</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 57.0% cover 71.0%;">same</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 57.8% cover 71.8%;">energy,</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 58.5% cover 72.5%;">new</span> <span data-word="" style="color: rgba(255, 255, 255, .3); animation: introWordFill linear both; animation-timeline: --introText; animation-range: cover 59.3% cover 73.3%;">war zone.</span></p>
+    </section>
+
+
+    <div data-screen-label="POTATO TANK band" aria-hidden="true" style="position: relative; z-index: 2; background: #B79268; border-top: 3px solid #111; border-bottom: 3px solid #111; padding: 16px 0; overflow: hidden; transform: rotate(-1.4deg); margin: clamp(30px, 6vh, 70px) 0 clamp(-18px, -2vh, -8px); width: 104vw; margin-left: -2vw;">
+      <div style="display: flex; align-items: center; gap: clamp(20px, 3vw, 40px); width: max-content; animation: POTATO TANKMarquee 26s linear infinite;"><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span><span style="font-family: 'Erica One', cursive; font-size: clamp(26px, 3vw, 44px); line-height: 1; color: #111; letter-spacing: 2px; flex: 0 0 auto;">$POTATO TANK</span><span aria-hidden="true" style="flex: 0 0 auto; width: 15px; height: 15px; background: #1E3FD8; border: 3px solid #111; transform: rotate(45deg);"></span></div>
+    </div>
+    <section id="POTATANK TOKENOMICS" data-screen-label="POTATANK TOKENOMICS" style="position: relative; padding: clamp(90px, 12vh, 150px) 24px clamp(70px, 9vh, 110px); background: #F6F2E8;">
+      <div style="max-width: 1120px; margin: 0 auto;">
+        <p data-reveal="" style="margin: 0 0 clamp(34px, 5vh, 56px); text-align: center; font-family: 'Erica One', cursive; font-size: clamp(26px, 5vw, 24px); letter-spacing: 2px; color: #111;">POTATANK TOKENOMICS</p>
+
+        <div data-reveal="" style="position: relative; border: 3px solid #111; border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; background: #FFFDF5; box-shadow: 8px 8px 0 #111; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          <img src="images/banana.png" alt="" aria-hidden="true" style="position: absolute; top: clamp(-30px, -2.4vw, -18px); right: clamp(-14px, -.9vw, -6px); width: clamp(54px, 6vw, 86px); height: auto; display: block; transform-origin: 50% 8%; animation: bananaSway 6.5s linear infinite; pointer-events: none; z-index: 3;">
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: clamp(32px, 4vw, 52px) clamp(24px, 3vw, 40px); border-right: 3px solid #111;">
+            <sc-if value="{{ statsLoading }}" hint-placeholder-val="{{ true }}">
+              <div style="height: clamp(44px, 5.6vw, 72px); width: min(78%, 250px); background: #111; border-radius: 3px; animation: apedSkeleton 1.1s ease-in-out infinite;"></div>
+            </sc-if>
+            <sc-if value="{{ statsReady }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family: 'Erica One', cursive; font-size: clamp(38px, 5.2vw, 72px); line-height: 1; color: #B79268; -webkit-text-stroke: 3px #111; paint-order: stroke fill; word-break: break-all;">{{ statsPrice }}</div>
+            </sc-if>
+            <div style="font-family: 'Erica One', cursive; font-size: clamp(13px, 1.2vw, 16px); letter-spacing: 3px; color: #111;">SOON PRICE</div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: clamp(32px, 4vw, 52px) clamp(24px, 3vw, 40px);">
+            <sc-if value="{{ statsLoading }}" hint-placeholder-val="{{ true }}">
+              <div style="height: clamp(44px, 5.6vw, 72px); width: min(78%, 250px); background: #111; border-radius: 3px; animation: apedSkeleton 1.1s ease-in-out infinite;"></div>
+            </sc-if>
+            <sc-if value="{{ statsReady }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family: 'Erica One', cursive; font-size: clamp(38px, 5.2vw, 72px); line-height: 1; color: #B79268; -webkit-text-stroke: 3px #111; paint-order: stroke fill; word-break: break-all;">{{ statsMcap }}</div>
+            </sc-if>
+            <div style="font-family: 'Erica One', cursive; font-size: clamp(13px, 1.2vw, 16px); letter-spacing: 3px; color: #111;">MARKET CAP SOON</div>
+          </div>
+        </div>
+
+        <div style="margin-top: clamp(28px, 4vh, 44px); display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: clamp(22px, 3vw, 34px);">
+          <div data-reveal="" style="position: relative; border: 3px solid #111; border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; background: #FFFDF5; padding: clamp(30px, 3vw, 44px) 28px 34px;">
+            <div aria-hidden="true" style="position: absolute; top: -16px; left: 22px; width: 88px; height: 30px; background: #F2D74B; border: 3px solid #111; transform: rotate(-7deg); opacity: .95;"></div>
+            <div style="font-family: 'Erica One', cursive; font-size: clamp(52px, 6vw, 76px); line-height: 1; color: #111;">1B</div>
+            <div style="margin-top: 10px; font-family: 'Erica One', cursive; font-size: 17px; letter-spacing: 1px; color: #B79268; -webkit-text-stroke: 1.5px #111; paint-order: stroke fill;">total supply</div>
+          </div>
+          <div data-reveal="" style="border: 3px solid #111; border-radius: 15px 225px 15px 255px / 225px 15px 255px 15px; background: #FFFDF5; padding: clamp(30px, 3vw, 44px) 28px 34px;">
+            <div style="font-family: 'Erica One', cursive; font-size: clamp(52px, 6vw, 76px); line-height: 1; color: #111;">0 / 0</div>
+            <div style="margin-top: 10px; font-family: 'Erica One', cursive; font-size: 17px; letter-spacing: 1px; color: #B79268; -webkit-text-stroke: 1.5px #111; paint-order: stroke fill;">buy / sell tax</div>
+          </div>
+          <div data-reveal="" style="border: 3px solid #111; border-radius: 225px 15px 255px 15px / 15px 255px 15px 225px; background: #FFFDF5; padding: clamp(30px, 3vw, 44px) 28px 34px;">
+            <div style="font-family: 'Erica One', cursive; font-size: clamp(52px, 6vw, 76px); line-height: 1; color: #111;">100%</div>
+            <div style="margin-top: 10px; font-family: 'Erica One', cursive; font-size: 17px; letter-spacing: 1px; color: #B79268; -webkit-text-stroke: 1.5px #111; paint-order: stroke fill;">liquidity burned</div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; padding: clamp(40px, 7vh, 90px) 0 clamp(10px, 2vh, 24px);">
+          <img src="images/laydown.webp" alt="APED lounging in his blue suit, holding a green feather" style="width: min(560px, 84vw); height: auto; display: block; animation: apedFloat 5.5s ease-in-out infinite;">
+        </div>
+      </div>
+    </section>
+
+    <section id="memes" data-screen-label="memes" style="position: relative; background: #0B0B0B; border-top: 3px solid #111; border-bottom: 3px solid #111; padding: clamp(100px, 15vh, 190px) 0 clamp(110px, 16vh, 200px); overflow: hidden;">
+      <div style="position: relative; z-index: 15; padding: 0 24px; text-align: center;">
+        <h2 data-reveal="" style="margin: 0 auto; max-width: 820px; font-family: 'Erica One', cursive; font-size: clamp(44px, 9vw, 74px); line-height: .98; letter-spacing: 1px; color: #FBFAF6; text-wrap: balance;">POTATO MEET TANK = $POTATANK</h2>
+        <div data-reveal="" style="display: flex; justify-content: center; margin-top: clamp(22px, 3.5vh, 36px);">
+          <a href="https://x.com/thepotatank" style-focus="outline: 3px solid #1E3FD8; outline-offset: 4px;" style-hover="transform: rotate(1.5deg) translateY(-2px);" style="background: #B79268; color: #111; border: 3px solid #111; border-radius: 14px 6px 16px 5px / 5px 16px 6px 14px; padding: 13px 28px 12px; font-size: 16px; box-shadow: 5px 5px 0 #111; transition: transform .15s ease;">POTATO TANK' files</a>
+        </div>
+      </div>
+
+      <div style="position: relative; margin-top: clamp(52px, 8vh, 96px); display: flex; flex-direction: {{ memeDirection }}; flex-wrap: nowrap; align-items: center; justify-content: center;">
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: 0px; margin-top: 0px; z-index: 2; transform: translateY(-9%) rotate(-8deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(-9%) rotate(-8deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-01.png" alt="APED at the trading desk as the chart breaks out" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: {{ memeStepX }}; margin-top: {{ memeStepY }}; z-index: 3; transform: translateY(11%) rotate(5deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(11%) rotate(5deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-02.png" alt="APED held aloft on a mountainside" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: {{ memeStepX }}; margin-top: {{ memeStepY }}; z-index: 4; transform: translateY(-7%) rotate(-4deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(-7%) rotate(-4deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-03.png" alt="APED riding the Wall Street bull" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: {{ memeStepX }}; margin-top: {{ memeStepY }}; z-index: 5; transform: translateY(13%) rotate(6deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(13%) rotate(6deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-04.png" alt="APED in the dark holding a glowing feather" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div data-reveal="" style="flex: 0 0 auto; width: {{ videoW }}; margin: {{ videoMargin }}; z-index: 20;">
+          <div style="position: relative; width: 100%; aspect-ratio: {{ videoRatio }}; border-top: 4px solid #111; border-bottom: 4px solid #111; border-left: {{ videoSideBorder }} solid #111; border-right: {{ videoSideBorder }} solid #111; background: #111; line-height: 0; overflow: hidden;">
+            <video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="{{ videoPreload }}" aria-label="APED promo loop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+              <source src="media/aped-video.mp4" type="video/mp4">
+              <source src="media/aped-video.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
+
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: {{ memeStepX }}; margin-top: {{ memeStepY }}; z-index: 5; transform: translateY(12%) rotate(-6deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(12%) rotate(-6deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-05.png" alt="APED on a throne of green candles" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: {{ memeStepX }}; margin-top: {{ memeStepY }}; z-index: 4; transform: translateY(-8%) rotate(5deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(-8%) rotate(5deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-06.png" alt="APED iced out at night" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: {{ memeStepX }}; margin-top: {{ memeStepY }}; z-index: 3; transform: translateY(11%) rotate(-5deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(11%) rotate(-5deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-07.png" alt="APED with the gauntlet in deep space" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 0 0 auto; width: {{ memeW }}; height: {{ memeH }}; margin-left: {{ memeStepX }}; margin-top: {{ memeStepY }}; z-index: 2; transform: translateY(-9%) rotate(8deg); border: 3px solid #111; overflow: hidden; background: #EFEADC; transition: transform .22s ease;" style-hover="transform: translateY(-9%) rotate(8deg) scale(1.06); z-index: 30;">
+          <img src="images/meme-08.png" alt="APED addressing a hall full of POTATO TANK" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+      </div>
+    </section>
+
+    <section id="how-to-buy" data-screen-label="how to buy" style="position: relative; border-top: 3px solid #111; padding: clamp(64px, 8vh, 96px) 24px clamp(120px, 18vh, 210px); background: #F6F2E8; overflow: hidden;">
+      <div style="position: relative; max-width: 1300px; margin: 0 auto;">
+        <p data-reveal="" style="margin: 0; text-align: center; font-family: 'Erica One', cursive; font-size: clamp(26px, 5vw, 24px); letter-spacing: 2px; color: #111;">HOW TO BUY</p>
+        <p data-reveal="" style="margin: 14px auto 0; text-align: center; font-size: clamp(18px, 3.8vw, 18px); color: #111;"><span style="position: relative; isolation: isolate; display: inline-block; padding: 4px 16px 5px; transform: rotate(-.8deg);" style-before="content: ''; position: absolute; inset: 0; background: #B79268; border-radius: 42% 58% 46% 54% / 62% 38% 55% 45%; transform: rotate(-1.6deg) scaleX(1.03); z-index: -1;" style-after="content: ''; position: absolute; left: -6px; top: 22%; width: 14px; height: 12px; background: #B79268; border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%; transform: rotate(-14deg); z-index: -1;">four steps. don't overthink it.</span></p>
+
+        <div data-reveal="" style="margin-top: clamp(30px, 4vh, 46px); display: grid; grid-template-columns: {{ stepColumns }}; align-items: stretch; gap: clamp(16px, 1.8vw, 24px);">
+          <div style="position: relative; padding-right: 8px; padding-bottom: 8px;">
+            <div aria-hidden="true" style="position: absolute; left: 8px; top: 8px; right: 0; bottom: 0; background: #111; border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; transform: rotate(-1.6deg);"></div>
+            <div data-step="" style="position: relative; height: 100%; box-sizing: border-box; border: 3px solid #111; border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; background: #FCFBF7; padding: 40px 32px 38px; transform: rotate(-1.6deg); transition: transform .2s ease;" style-hover="transform: rotate(0deg) translateY(-6px);">
+              <div aria-hidden="true" style="position: absolute; top: -12px; left: 18px; width: 68px; height: 22px; background: #B79268; border: 3px solid #111; transform: rotate(-6deg);"></div>
+              <div style="font-family: 'Erica One', cursive; font-size: 72px; line-height: 1; color: #B79268; -webkit-text-stroke: 3px #111; paint-order: stroke fill;">1</div>
+              <div style="display: inline-block; margin-top: 10px; font-family: 'Erica One', cursive; font-size: 21px; color: #1E3FD8;">get a wallet</div>
+              <p style="margin: 17px 0 0; font-size: 18px; line-height: 1.7; color: #111;">download one. write the seed phrase on paper, not in your notes app.</p>
+            </div>
+          </div>
+        <div aria-hidden="true" style="display: {{ connectorDisplay }}; align-items: center; justify-content: center; padding-bottom: 8px;">
+          <svg width="46" height="20" viewBox="0 0 46 20" style="display: block; overflow: visible;"><path d="M1 11 C 10 5, 18 15, 27 9 L 38 9" fill="none" stroke="#111" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"></path><path d="M33 3 L 40 9 L 33 15" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+          <div style="position: relative; padding-right: 8px; padding-bottom: 8px;">
+            <div aria-hidden="true" style="position: absolute; left: 8px; top: 8px; right: 0; bottom: 0; background: #111; border-radius: 15px 225px 15px 255px / 225px 15px 255px 15px; transform: rotate(1.4deg);"></div>
+            <div data-step="" style="position: relative; height: 100%; box-sizing: border-box; border: 3px solid #111; border-radius: 15px 225px 15px 255px / 225px 15px 255px 15px; background: #FCFBF7; padding: 40px 32px 38px; transform: rotate(1.4deg); transition: transform .2s ease;" style-hover="transform: rotate(0deg) translateY(-6px);">
+              
+              <div style="font-family: 'Erica One', cursive; font-size: 72px; line-height: 1; color: #B79268; -webkit-text-stroke: 3px #111; paint-order: stroke fill;">2</div>
+              <div style="display: inline-block; margin-top: 10px; font-family: 'Erica One', cursive; font-size: 21px; color: #1E3FD8;">fund it</div>
+              <p style="margin: 17px 0 0; font-size: 18px; line-height: 1.7; color: #111;">send over whatever you'd shrug at losing. leave a little for gas.</p>
+            </div>
+          </div>
+        <div aria-hidden="true" style="display: {{ connectorDisplay }}; align-items: center; justify-content: center; padding-bottom: 8px;">
+          <svg width="46" height="20" viewBox="0 0 46 20" style="display: block; overflow: visible;"><path d="M1 11 C 10 5, 18 15, 27 9 L 38 9" fill="none" stroke="#111" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"></path><path d="M33 3 L 40 9 L 33 15" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+          <div style="position: relative; padding-right: 8px; padding-bottom: 8px;">
+            <div aria-hidden="true" style="position: absolute; left: 8px; top: 8px; right: 0; bottom: 0; background: #111; border-radius: 225px 15px 255px 15px / 15px 255px 15px 225px; transform: rotate(-1.1deg);"></div>
+            <div data-step="" style="position: relative; height: 100%; box-sizing: border-box; border: 3px solid #111; border-radius: 225px 15px 255px 15px / 15px 255px 15px 225px; background: #FCFBF7; padding: 40px 32px 38px; transform: rotate(-1.1deg); transition: transform .2s ease;" style-hover="transform: rotate(0deg) translateY(-6px);">
+              
+              <div style="font-family: 'Erica One', cursive; font-size: 72px; line-height: 1; color: #B79268; -webkit-text-stroke: 3px #111; paint-order: stroke fill;">3</div>
+              <div style="display: inline-block; margin-top: 10px; font-family: 'Erica One', cursive; font-size: 21px; color: #1E3FD8;">swap</div>
+              <p style="margin: 17px 0 0; font-size: 18px; line-height: 1.7; color: #111;">paste the contract address in, check it twice, confirm.</p>
+            </div>
+          </div>
+        <div aria-hidden="true" style="display: {{ connectorDisplay }}; align-items: center; justify-content: center; padding-bottom: 8px;">
+          <svg width="46" height="20" viewBox="0 0 46 20" style="display: block; overflow: visible;"><path d="M1 11 C 10 5, 18 15, 27 9 L 38 9" fill="none" stroke="#111" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"></path><path d="M33 3 L 40 9 L 33 15" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+          <div style="position: relative; padding-right: 8px; padding-bottom: 8px;">
+            <div aria-hidden="true" style="position: absolute; left: 8px; top: 8px; right: 0; bottom: 0; background: #111; border-radius: 15px 255px 15px 225px / 255px 15px 225px 15px; transform: rotate(1.9deg);"></div>
+            <div data-step="" style="position: relative; height: 100%; box-sizing: border-box; border: 3px solid #111; border-radius: 15px 255px 15px 225px / 255px 15px 225px 15px; background: #FCFBF7; padding: 40px 32px 38px; transform: rotate(1.9deg); transition: transform .2s ease;" style-hover="transform: rotate(0deg) translateY(-6px);">
+              <div aria-hidden="true" style="position: absolute; top: -12px; left: 18px; width: 68px; height: 22px; background: #B79268; border: 3px solid #111; transform: rotate(-6deg);"></div>
+              <div style="font-family: 'Erica One', cursive; font-size: 72px; line-height: 1; color: #B79268; -webkit-text-stroke: 3px #111; paint-order: stroke fill;">4</div>
+              <div style="display: inline-block; margin-top: 10px; font-family: 'Erica One', cursive; font-size: 21px; color: #1E3FD8;">let's war</div>
+              <p style="margin: 17px 0 0; font-size: 18px; line-height: 1.7; color: #111;">close the chart. touch grass. come back a legend.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" data-screen-label="join us" style="position: relative; background: #F6F2E8; border-top: 1px solid #111; padding: {{ joinPadTop }} 24px 0; text-align: center; overflow: hidden;">
+      <div style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto;">
+        <h2 data-reveal="" style="margin: 0; font-family: 'Erica One', cursive; font-size: clamp(46px, 10vw, 82px); line-height: 1.06; letter-spacing: 1px; color: #111;">
+          <span style="display: block;">JOIN THE</span>
+          <span style="display: inline-block; position: relative; isolation: isolate; margin-top: .1em; padding: 0 .28em .06em;" style-before="content: ''; position: absolute; left: 0; right: 0; top: 16%; bottom: 8%; background: #B79268; border-radius: 120px 14px 110px 16px / 16px 100px 14px 120px; transform: rotate(-1.4deg); z-index: -1;">POTATO TANK' TAKEOVER</span>
+        </h2>
+        <p data-reveal="" style="margin: 18px auto 0; max-width: 520px; font-family: 'Erica One', cursive; font-size: clamp(20px, 4.4vw, 22px); color: #111;">more POTATO TANK. more strong.</p>
+
+        <div data-reveal="" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px; margin-top: clamp(26px, 4vh, 40px);">
+          <a href="{{ xUrl }}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; background: #F5F1E8; color: #111; border: 3px solid #111; border-radius: 14px 6px 16px 5px / 5px 16px 6px 14px; padding: 13px 24px; font-size: 16px; box-shadow: 4px 4px 0 #111; transition: transform .15s ease;" style-hover="transform: rotate(-2deg) translateY(-3px); background: #FFFDF5;" style-focus="outline: 3px solid #1E3FD8; outline-offset: 4px;">
+            <svg width="17" height="17" viewBox="0 0 16 16" aria-hidden="true" style="display: block; fill: #111;"><path d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z"></path></svg>
+            <span>x / twitter</span>
+          </a>
+          <a href="{{ tgUrl }}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; background: #F5F1E8; color: #111; border: 3px solid #111; border-radius: 6px 14px 5px 16px / 16px 5px 14px 6px; padding: 13px 24px; font-size: 16px; box-shadow: 4px 4px 0 #111; transition: transform .15s ease;" style-hover="transform: rotate(2deg) translateY(-3px); background: #FFFDF5;" style-focus="outline: 3px solid #1E3FD8; outline-offset: 4px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="display: block; fill: #111;"><path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"></path></svg>
+            <span>telegram</span>
+          </a>
+        </div>
+
+        <div data-reveal="" style="display: flex; justify-content: center; margin-top: clamp(28px, 4.5vh, 48px);">
+          <a href="{{ buyUrl }}" style="background: #B79268; color: #111; border: 4px solid #111; border-radius: 20px 8px 22px 7px / 7px 22px 8px 20px; padding: clamp(20px, 2.6vw, 30px) clamp(38px, 6vw, 74px); font-family: 'Erica One', cursive; font-size: clamp(28px, 4.2vw, 52px); letter-spacing: 1px; line-height: 1; box-shadow: 10px 10px 0 #111; transition: transform .16s ease, color .16s ease, box-shadow .16s ease;" style-hover="transform: rotate(-1.5deg) translateY(-4px); color: #1E3FD8; box-shadow: 13px 14px 0 #111;" style-active="transform: translate(4px, 4px); box-shadow: 5px 5px 0 #111;" style-focus="outline: 4px solid #2FA84F; outline-offset: 5px;">BUY $POTATO TANK</a>
+        </div>
+      </div>
+
+      <div aria-hidden="true" style="position: relative; z-index: 1; overflow: hidden; margin: 0 calc(50% - 50vw); width: 100vw; pointer-events: none;">
+        <picture>
+          <source media="(max-width: 899px)" srcset="images/footer-jungle-mobile.png">
+          <img src="images/footer-jungle-web.png" alt="" decoding="async" style="display: block; width: 100%; min-width: {{ footerArtMinW }}; height: auto; aspect-ratio: {{ footerArtRatio }}; margin-top: {{ footerArtCrop }}; margin-left: 50%; transform: translateX(-50%);">
+        </picture>
+      </div>
+
+      <footer style="position: relative; z-index: 2; margin: 0 calc(50% - 50vw); width: 100vw; box-sizing: border-box; background: #1F7A34; border-top: 3px solid #111; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; text-align: left;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <img src="images/logo.png" alt="APED logo" style="width: 30px; height: 30px; border-radius: 50%; border: 3px solid #111; display: block;">
+          <span style="font-family: 'Erica One', cursive; font-size: 17px; color: #F5F1E8;">POTATO TANK</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px; order: {{ socialOrder }};">
+          <a href="{{ xUrl }}" target="_blank" rel="noopener" aria-label="x / twitter" title="x / twitter" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border: 3px solid #111; border-radius: 50%; background: #F5F1E8; transition: transform .16s ease;" style-hover="transform: translateY(-3px) rotate(-6deg); background: #B79268;" style-focus="outline: 3px solid #B79268; outline-offset: 3px;"><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" style="display: block; fill: #111;"><path d="M12.6 0.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867 -5.07 -4.425 5.07H0.316l5.733 -6.57L0 0.75h5.063l3.495 4.633L12.601 0.75Zm-0.86 13.028h1.36L4.323 2.145H2.865z"></path></svg></a>
+          <a href="{{ chartUrl }}" target="_blank" rel="noopener" aria-label="dexscreener" title="dexscreener" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border: 3px solid #111; border-radius: 50%; background: #F5F1E8; transition: transform .16s ease;" style-hover="transform: translateY(-3px) rotate(6deg); background: #B79268;" style-focus="outline: 3px solid #B79268; outline-offset: 3px;"><svg width="16" height="16" viewBox="0 0 252 300" aria-hidden="true" style="display: block; fill: #111; fill-rule: evenodd;"><path d="M151.818 106.866c9.177-4.576 20.854-11.312 32.545-20.541 2.465 5.119 2.735 9.586 1.465 13.193-.9 2.542-2.596 4.753-4.826 6.512-2.415 1.901-5.431 3.285-8.765 4.033-6.326 1.425-13.712.593-20.419-3.197m1.591 46.886l12.148 7.017c-24.804 13.902-31.547 39.716-39.557 64.859-8.009-25.143-14.753-50.957-39.556-64.859l12.148-7.017a5.95 5.95 0 003.84-5.845c-1.113-23.547 5.245-33.96 13.821-40.498 3.076-2.342 6.434-3.518 9.747-3.518s6.671 1.176 9.748 3.518c8.576 6.538 14.934 16.951 13.821 40.498a5.95 5.95 0 003.84 5.845zM126 0c14.042.377 28.119 3.103 40.336 8.406 8.46 3.677 16.354 8.534 23.502 14.342 3.228 2.622 5.886 5.155 8.814 8.071 7.897.273 19.438-8.5 24.796-16.709-9.221 30.23-51.299 65.929-80.43 79.589-.012-.005-.02-.012-.029-.018-5.228-3.992-11.108-5.988-16.989-5.988s-11.76 1.996-16.988 5.988c-.009.005-.017.014-.029.018-29.132-13.66-71.209-49.359-80.43-79.589 5.357 8.209 16.898 16.982 24.795 16.709 2.929-2.915 5.587-5.449 8.814-8.071C69.31 16.94 77.204 12.083 85.664 8.406 97.882 3.103 111.959.377 126 0m-25.818 106.866c-9.176-4.576-20.854-11.312-32.544-20.541-2.465 5.119-2.735 9.586-1.466 13.193.901 2.542 2.597 4.753 4.826 6.512 2.416 1.901 5.432 3.285 8.766 4.033 6.326 1.425 13.711.593 20.418-3.197"></path><path d="M197.167 75.016c6.436-6.495 12.107-13.684 16.667-20.099l2.316 4.359c7.456 14.917 11.33 29.774 11.33 46.494l-.016 26.532.14 13.754c.54 33.766 7.846 67.929 24.396 99.193l-34.627-27.922-24.501 39.759-25.74-24.231L126 299.604l-41.132-66.748-25.739 24.231-24.501-39.759L0 245.25c16.55-31.264 23.856-65.427 24.397-99.193l.14-13.754-.016-26.532c0-16.721 3.873-31.578 11.331-46.494l2.315-4.359c4.56 6.415 10.23 13.603 16.667 20.099l-2.01 4.175c-3.905 8.109-5.198 17.176-2.156 25.799 1.961 5.554 5.54 10.317 10.154 13.953 4.48 3.531 9.782 5.911 15.333 7.161 3.616.814 7.3 1.149 10.96 1.035-.854 4.841-1.227 9.862-1.251 14.978L53.2 160.984l25.206 14.129a41.926 41.926 0 015.734 3.869c20.781 18.658 33.275 73.855 41.861 100.816 8.587-26.961 21.08-82.158 41.862-100.816a41.865 41.865 0 015.734-3.869l25.206-14.129-32.665-18.866c-.024-5.116-.397-10.137-1.251-14.978 3.66.114 7.344-.221 10.96-1.035 5.551-1.25 10.854-3.63 15.333-7.161 4.613-3.636 8.193-8.399 10.153-13.953 3.043-8.623 1.749-17.689-2.155-25.799l-2.01-4.175z"></path></svg></a>
+          <a href="{{ tgUrl }}" target="_blank" rel="noopener" aria-label="telegram" title="telegram" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border: 3px solid #111; border-radius: 50%; background: #F5F1E8; transition: transform .16s ease;" style-hover="transform: translateY(-3px) rotate(-6deg); background: #B79268;" style-focus="outline: 3px solid #B79268; outline-offset: 3px;"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true" style="display: block; fill: #111;"><path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"></path></svg></a>
+        </div>
+        <span style="font-size: 12px; color: #F5F1E8; opacity: .85; flex: {{ copyFlex }}; text-align: {{ copyAlign }}; order: {{ copyOrder }};">© 2026 POTATO TANK. not financial advice. just POTATO TANK.</span>
+      </footer>
+    </section>
+
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{" contractaddress":{"editor":"text","default":"0x9f2ce4a1b7d3e58c0a6f4b2d81e7c3f5ab09d6e42","tstype":"string","section":"token"},"statsendpoint":{"editor":"text","default":"","tstype":"string","section":"token"},"buyurl":{"editor":"text","default":"https:="" www.ponsfamily.com="" launchpad="" 0x2076cd26d8cf26f91655d4ada3dd2fdbfdd8e7a4","tstype":"string","section":"token"},"videoembedurl":{"editor":"text","default":"","tstype":"string","section":"content"},"xurl":{"editor":"text","default":"https:="" x.com="" POTATO TANKonhood","tstype":"string","section":"content"},"tgurl":{"editor":"text","default":"https:="" t.me="" ","tstype":"string","section":"content"},"charturl":{"editor":"text","default":"https:="" dexscreener.com="" ","tstype":"string","section":"content"}}"="">
+class Component extends DCLogic {
+  state = { scrolled: false, width: 1280, menuOpen: false, copied: false, stats: { status: 'loading' }, muteLift: 0, loader: 'show', soundOn: (function () { try { return localStorage.getItem('aped-sound') !== 'off'; } catch (e) { return true; } })() };
+  audioRef = React.createRef();
+
+  componentDidMount() {
+    this.bootLoader();
+    // only the visible copy of the page makes sound
+    this._onVis = () => {
+      const a = this.audioRef.current;
+      if (!a) return;
+      if (document.hidden) { a.pause(); }
+      else if (this.state.soundOn && this._booted) { const p = a.play(); if (p && p.catch) p.catch(() => {}); }
+    };
+    document.addEventListener('visibilitychange', this._onVis);
+    window.addEventListener('blur', this._onVis);
+    this._videoTimer = setTimeout(() => {
+      const hush = (el) => { el.muted = true; el.defaultMuted = true; el.volume = 0; };
+      document.querySelectorAll('video').forEach((el) => {
+        hush(el);
+        ['play', 'playing', 'volumechange', 'loadeddata'].forEach((ev) => el.addEventListener(ev, () => hush(el)));
+      });
+      const v = document.querySelector('#memes video');
+      if (!v) return;
+      v.muted = true;
+      v.defaultMuted = true;
+      v.loop = true;
+      v.setAttribute('muted', '');
+      v.setAttribute('playsinline', '');
+      v.setAttribute('webkit-playsinline', '');
+      v.setAttribute('disableremoteplayback', '');
+      if (v.readyState === 0) v.load();
+      const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+      play();
+      ['loadeddata', 'canplay'].forEach((ev) => v.addEventListener(ev, play));
+      ['pointerdown', 'touchstart'].forEach((ev) => window.addEventListener(ev, play, { passive: true }));
+      // some browsers block until the tab/section is visible
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((es) => es.forEach((e) => {
+          if (e.isIntersecting) play();
+          else if (!v.paused) v.pause();
+        }), { rootMargin: '150px 0px' });
+        io.observe(v);
+        this._videoIo = io;
+      }
+    }, 300);
+    this._onScroll = () => {
+      if (this._raf) return;
+      this._raf = requestAnimationFrame(() => {
+        this._raf = null;
+        const s = window.scrollY > 60;
+        if (s !== this.state.scrolled) this.setState({ scrolled: s });
+        const nav = document.querySelector('[data-nav]');
+        if (!nav) return;
+        nav.style.transform = s ? 'translateY(-5px) scale(.97)' : 'none';
+        nav.style.boxShadow = s ? '4px 4px 0 #111' : '6px 6px 0 #111';
+      });
+    };
+    this._onResize = () => {
+      if (window.innerWidth !== this.state.width) this.setState({ width: window.innerWidth, menuOpen: false });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    window.addEventListener('resize', this._onResize);
+    this.setState({ width: window.innerWidth, scrolled: window.scrollY > 60 });
+    this.loadStats();
+    this._revealTimer = setTimeout(() => this.setupReveals(), 450);
+    this._wordTimer = setTimeout(() => this.setupWordFill(), 500);
+    this._footTimer = setTimeout(() => this.trackFooter(), 600);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('resize', this._onResize);
+    if (this._sweep) window.removeEventListener('scroll', this._sweep);
+    clearTimeout(this._revealTimer);
+    clearTimeout(this._wordTimer);
+    clearInterval(this._statsPoll);
+    clearTimeout(this._videoTimer);
+    if (this._raf) cancelAnimationFrame(this._raf);
+    document.body.style.overflow = '';
+    clearTimeout(this._footTimer);
+    if (this._measureFooter) {
+      window.removeEventListener('scroll', this._measureFooter);
+      window.removeEventListener('resize', this._measureFooter);
+    }
+    clearTimeout(this._minTimer);
+    clearTimeout(this._failsafe);
+    clearTimeout(this._loaderGone);
+    clearTimeout(this._fade);
+    if (this._audioCleanup) this._audioCleanup();
+    if (this._onVis) {
+      document.removeEventListener('visibilitychange', this._onVis);
+      window.removeEventListener('blur', this._onVis);
+      window.removeEventListener('focus', this._onVis);
+    }
+    if (this._onStorage) window.removeEventListener('storage', this._onStorage);
+    const a = this.audioRef.current;
+    if (a) { try { a.pause(); a.muted = true; } catch (e) { /* detached */ } }
+    if (window.__apedAudio === a) window.__apedAudio = null;
+    document.removeEventListener('visibilitychange', this._onVis);
+    window.removeEventListener('blur', this._onVis);
+
+    if (this._videoIo) this._videoIo.disconnect();
+    clearTimeout(this._copyTimer);
+    if (this._io) this._io.disconnect();
+  }
+
+  // Loader: hold until the window has loaded (min 1.5s so the spin reads), then
+  // fade out, release the hero animations, and start the soundtrack.
+  bootLoader() {
+    const finish = () => {
+      if (this._booted) return;
+      this._booted = true;
+      this.setState({ loader: 'fade' });
+      document.body.setAttribute('data-ready', '1');
+      this.startAudio();
+      this._loaderGone = setTimeout(() => this.setState({ loader: 'gone' }), 650);
+    };
+    const minWait = new Promise((res) => { this._minTimer = setTimeout(res, 1500); });
+    const loaded = document.readyState === 'complete'
+      ? Promise.resolve()
+      : new Promise((res) => window.addEventListener('load', res, { once: true }));
+    Promise.all([minWait, loaded]).then(finish);
+    this._failsafe = setTimeout(finish, 6000);
+  }
+
+  // Unmuted autoplay is blocked in most browsers — fall back to the first gesture.
+  startAudio() {
+    const a = this.audioRef.current;
+    if (!a || document.hidden) return;
+    if (!this.state.soundOn) { a.muted = true; a.volume = 0; return; }
+    // any leftover instance from a hot reload would double up
+    document.querySelectorAll('audio').forEach((el) => { if (el !== a) { el.pause(); el.muted = true; } });
+    document.querySelectorAll('video').forEach((el) => { el.muted = true; el.defaultMuted = true; el.volume = 0; });
+    a.volume = 0;
+    a.muted = false;
+    const fadeIn = () => {
+      const step = () => {
+        if (!a || a.volume >= 0.5) return;
+        a.volume = Math.min(0.5, a.volume + 0.025);
+        this._fade = setTimeout(step, 90);
+      };
+      step();
+    };
+    const tryPlay = () => {
+      const p = a.play();
+      if (p && p.catch) return p.then(() => { fadeIn(); return true; }).catch(() => false);
+      fadeIn();
+      return Promise.resolve(true);
+    };
+    tryPlay().then((ok) => {
+      if (ok === false) {
+        const evts = ['pointerdown', 'keydown', 'touchstart', 'wheel'];
+        const cleanup = () => evts.forEach((e) => window.removeEventListener(e, kick));
+        const kick = () => { tryPlay(); cleanup(); };
+        evts.forEach((e) => window.addEventListener(e, kick, { once: true, passive: true }));
+        this._audioCleanup = cleanup;
+      }
+    });
+  }
+
+  setupAudioCoordination() {
+    const a = this.audioRef.current;
+    if (!a) return;
+    this._syncAudio = (force) => {
+      const el = this.audioRef.current;
+      if (!el) return;
+      const on = (force === undefined ? this.state.soundOn : force) && !document.hidden;
+      if (!on) {
+        el.muted = true;
+        el.pause();
+      } else {
+        el.muted = false;
+        if (el.volume === 0) el.volume = 0.5;
+        const p = el.play();
+        if (p && p.catch) p.catch(() => {});
+      }
+      document.querySelectorAll('video').forEach((v) => { v.muted = true; v.volume = 0; });
+    };
+    this._onVis = () => this._syncAudio();
+    this._onStorage = (e) => {
+      if (e.key !== 'aped-sound') return;
+      const on = e.newValue !== 'off';
+      if (on !== this.state.soundOn) this.setState({ soundOn: on }, () => this._syncAudio(on));
+    };
+    document.addEventListener('visibilitychange', this._onVis);
+    window.addEventListener('blur', this._onVis);
+    window.addEventListener('focus', this._onVis);
+    window.addEventListener('storage', this._onStorage);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.menuOpen !== this.state.menuOpen) {
+      document.body.style.overflow = this.state.menuOpen ? 'hidden' : '';
+    }
+  }
+
+  toggleMute = () => {
+    const a = this.audioRef.current;
+    const next = !this.state.soundOn;
+    clearTimeout(this._fade);
+    this.setState({ soundOn: next });
+    try { localStorage.setItem('aped-sound', next ? 'on' : 'off'); } catch (e) { /* private mode */ }
+    if (!a) return;
+    a.muted = !next;
+    a.volume = next ? Math.max(a.volume, 0.5) : 0;
+    document.querySelectorAll('video').forEach((el) => { el.muted = true; el.volume = 0; });
+    if (this._syncAudio) this._syncAudio(next);
+    else if (next && a.paused) { const p = a.play(); if (p && p.catch) p.catch(() => {}); }
+  };
+
+  // lift the sound toggle above the footer instead of covering it
+  trackFooter() {
+    const foot = document.querySelector('#join footer');
+    if (!foot) return;
+    const measure = () => {
+      const r = foot.getBoundingClientRect();
+      const overlap = window.innerHeight - r.top;
+      const lift = overlap > 0 ? Math.round(overlap) + 16 : 0;
+      if (lift !== this.state.muteLift) this.setState({ muteLift: lift });
+    };
+    this._measureFooter = measure;
+    window.addEventListener('scroll', measure, { passive: true });
+    window.addEventListener('resize', measure);
+    measure();
+  }
+
+  // scroll-linked word fill for the intro copy.
+  // native path: CSS animation-timeline: view(). fallback: GSAP ScrollTrigger scrub.
+  setupWordFill() {
+    const p = document.getElementById('intro-copy');
+    if (!p) return;
+    const words = Array.prototype.slice.call(p.querySelectorAll('[data-word]'));
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      p.style.color = '#FFFFFF';
+      p.style.webkitTextStrokeColor = '#111';
+      words.forEach((w) => { w.style.animation = 'none'; w.style.color = '#FFFFFF'; w.style.webkitTextStrokeColor = '#111'; });
+      return;
+    }
+    const nativeOk = window.CSS && CSS.supports && CSS.supports('animation-timeline', 'view()') && CSS.supports('animation-range', 'cover 20%');
+    if (nativeOk) return;
+    words.forEach((w) => { w.style.animation = 'none'; });
+    this.loadGsap().then(() => {
+      const gsap = window.gsap;
+      if (!gsap || !window.ScrollTrigger) throw new Error('gsap unavailable');
+      gsap.registerPlugin(window.ScrollTrigger);
+      gsap.to(words, {
+        color: '#FFFFFF',
+        webkitTextStrokeColor: '#111',
+        ease: 'none',
+        stagger: { each: 0.6 / Math.max(words.length, 1) },
+        scrollTrigger: { trigger: p, start: 'top 85%', end: 'bottom 45%', scrub: true }
+      });
+    }).catch(() => {
+      words.forEach((w) => { w.style.color = '#FFFFFF'; w.style.webkitTextStrokeColor = '#111'; });
+    });
+  }
+
+  loadGsap() {
+    if (this._gsapPromise) return this._gsapPromise;
+    const add = (src) => new Promise((res, rej) => {
+      const s = document.createElement('script');
+      s.src = src;
+      s.onload = res;
+      s.onerror = rej;
+      document.head.appendChild(s);
+    });
+    this._gsapPromise = add('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js')
+      .then(() => add('https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js'));
+    return this._gsapPromise;
+  }
+
+  setupReveals() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+    const reveal = (el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      this._io.unobserve(el);
+      this._pending.delete(el);
+    };
+    this._pending = new Set();
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting || e.boundingClientRect.top < 0) reveal(e.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      const r = el.getBoundingClientRect();
+      el.style.transition = 'opacity .55s ease, transform .55s ease';
+      if (r.top > window.innerHeight * 0.92) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(18px)';
+        this._pending.add(el);
+      }
+      this._io.observe(el);
+    });
+    // safety net: anything scrolled into or past the viewport gets revealed even
+    // if the observer never sampled it (anchor jumps, fast flings)
+    this._sweep = () => {
+      this._pending.forEach((el) => {
+        if (el.getBoundingClientRect().top < window.innerHeight) reveal(el);
+      });
+    };
+    window.addEventListener('scroll', this._sweep, { passive: true });
+    this._sweep();
+  }
+
+  // Live token stats from dexscreener, polled every 20s.
+  // On a failed fetch we keep the last good value rather than blanking the UI.
+  loadStats() {
+    const endpoint = (this.props.statsEndpoint || 'https://api.dexscreener.com/latest/dex/pairs/robinhood/0x66ece80a4b7a5a48034c58b8f812ed476fca6fc8').trim();
+    if (!endpoint) return;
+    const tick = () => {
+      fetch(endpoint, { headers: { accept: 'application/json' } })
+        .then((r) => { if (!r.ok) throw new Error('bad status ' + r.status); return r.json(); })
+        .then((d) => {
+          const p = (d && d.pairs && d.pairs[0]) || (d && d.pair) || null;
+          if (!p) throw new Error('no pair in response');
+          this.setState({ stats: { status: 'ok', price: this.fmtPrice(p.priceUsd), mcap: this.fmtCap(p.marketCap), at: Date.now() } });
+        })
+        .catch(() => {
+          this.setState((s) => (s.stats.status === 'ok'
+            ? { stats: Object.assign({}, s.stats, { status: 'stale' }) }
+            : { stats: { status: 'error' } }));
+        });
+    };
+    tick();
+    this._statsPoll = setInterval(tick, 20000);
+  }
+
+  fmtPrice(n) {
+    const v = Number(n);
+    if (!isFinite(v)) return '—';
+    return '$' + (v < 1 ? v.toFixed(6).replace(/0+$/, '') : v.toLocaleString('en-US', { maximumFractionDigits: 2 }));
+  }
+
+  fmtCap(n) {
+    const v = Number(n);
+    if (!isFinite(v)) return '—';
+    if (v >= 1e9) return '$' + (v / 1e9).toFixed(2) + 'B';
+    if (v >= 1e6) return '$' + (v / 1e6).toFixed(2) + 'M';
+    if (v >= 1e3) return '$' + (v / 1e3).toFixed(1) + 'K';
+    return '$' + v.toFixed(2);
+  }
+
+  ca() {
+    return this.props.contractAddress || '0x9f2Ce4A1b7D3e58c0A6f4B2d81E7c3F5aB09D6e42';
+  }
+
+  copy = () => {
+    const text = this.ca();
+    const done = () => {
+      this.setState({ copied: true });
+      clearTimeout(this._copyTimer);
+      this._copyTimer = setTimeout(() => this.setState({ copied: false }), 2000);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(() => this.legacyCopy(text, done));
+    } else {
+      this.legacyCopy(text, done);
+    }
+  };
+
+  legacyCopy(text, done) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) { /* clipboard unavailable */ }
+    document.body.removeChild(ta);
+  }
+
+  renderVals() {
+    const st = this.state.stats;
+    const addr = this.ca();
+    const isMobile = this.state.width < 900;
+    const video = (this.props.videoEmbedUrl || '').trim();
+    let note = '';
+    if (st.status === 'loading') note = 'fetching live numbers…';
+    else if (st.status === 'ok') note = 'live from dexscreener · refreshes every 20s';
+    else if (st.status === 'stale') note = 'last known values — reconnecting to the feed…';
+    else if (st.status === 'error') note = "couldn't reach the feed. numbers will be back shortly.";
+    return {
+      showLoader: this.state.loader !== 'gone',
+      loaderOpacity: this.state.loader === 'show' ? 1 : 0,
+      loaderPointer: this.state.loader === 'show' ? 'auto' : 'none',
+      audioRef: this.audioRef,
+      heroStroke: isMobile ? '.04em' : '.02em',
+      subShadow: isMobile ? '.03em .04em 0' : '.06em .08em 0',
+      copyFlex: isMobile ? '1 0 100%' : '1 1 auto',
+      copyAlign: 'center',
+      socialOrder: isMobile ? 0 : 2,
+      copyOrder: isMobile ? 2 : 1,
+      muteBottom: this.state.muteLift ? this.state.muteLift + 'px' : 'clamp(16px, 2vw, 28px)',
+      soundOn: this.state.soundOn,
+      soundOff: !this.state.soundOn,
+      muteLabel: this.state.soundOn ? 'mute soundtrack' : 'unmute soundtrack',
+      toggleMute: this.toggleMute,
+      navOpacity: this.state.scrolled || this.state.menuOpen ? 1 : 0,
+      isMobile,
+      isDesktop: !isMobile,
+      menuOpen: this.state.menuOpen,
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      stepColumns: isMobile ? '1fr' : '1fr auto 1fr auto 1fr auto 1fr',
+      heroCtaTop: isMobile ? 'clamp(80px, 15vh, 160px)' : 'clamp(56px, 10vh, 120px)',
+      heroCtaPad: isMobile ? '18px 40px 16px' : '13px 30px 11px',
+      heroCtaSize: isMobile ? 'clamp(22px, 6.2vw, 30px)' : 'clamp(17px, 1.7vw, 22px)',
+      loreSize: isMobile ? 'clamp(22px, 6.6vw, 32px)' : 'clamp(24px, 2.6vw, 38px)',
+      loreStroke: isMobile ? 'min(.42vw, 2px)' : '2px',
+      menuLabel: this.state.menuOpen ? 'close menu' : 'open menu',
+      burgerTop: this.state.menuOpen ? 'translateY(8px) rotate(45deg)' : 'none',
+      burgerBottom: this.state.menuOpen ? 'translateY(-8px) rotate(-45deg)' : 'none',
+      burgerMidOpacity: this.state.menuOpen ? 0 : 1,
+      navBg: isMobile ? 'transparent' : '#B79268',
+      navBorder: isMobile ? '0' : '3px solid #111',
+      navShadow: isMobile ? 'none' : '6px 6px 0 #111',
+      navPad: isMobile ? '0' : '10px 16px 10px 12px',
+      headerPad: isMobile ? '14px 16px 0' : '18px 20px 0',
+      memeDirection: isMobile ? 'column' : 'row',
+      memeW: isMobile ? 'min(72vw, 340px)' : 'clamp(150px, 17vw, 300px)',
+      memeH: isMobile ? 'min(90vw, 430px)' : 'clamp(190px, 21.5vw, 380px)',
+      memeStepX: isMobile ? '0px' : '-3.4vw',
+      memeStepY: isMobile ? '-9vw' : '0px',
+      memeShiftX: isMobile ? '0px' : '0px',
+      videoW: isMobile ? '100vw' : 'clamp(340px, 52vw, 940px)',
+      videoMargin: isMobile ? '-6vw 0' : '0 -3.4vw',
+      videoRatio: isMobile ? '5 / 4' : '16 / 9',
+      videoPreload: isMobile ? 'metadata' : 'auto',
+      videoSideBorder: isMobile ? '0px' : '4px',
+      footerArtMinW: isMobile ? '0px' : '900px',
+      joinPadTop: isMobile ? 'clamp(56px, 9vh, 90px)' : 'clamp(90px, 14vh, 170px)',
+      footerArtCrop: '0px',
+      footerArtRatio: isMobile ? '821 / 714' : '1800 / 638',
+      connectorDisplay: isMobile ? 'none' : 'flex',
+      mascotDisplay: isMobile ? 'none' : 'block',
+      buyUrl: this.props.buyUrl || 'https://pump.fun',
+      xUrl: this.props.xUrl || 'https://x.com/thepotatank',
+      tgUrl: this.props.tgUrl || 'https://t.me/thepotatank',
+      chartUrl: this.props.chartUrl || 'https://dexscreener.com/',
+      hasVideo: !!video,
+      noVideo: !video,
+      videoEmbedUrl: video,
+      caShort: addr.length > 22 ? addr.slice(0, 8) + '…' + addr.slice(-6) : addr,
+      copyCa: this.copy,
+      copyLabel: this.state.copied ? '✓ copied!' : '[ copy ]',
+      copyHint: this.state.copied ? 'contract address copied to clipboard' : 'click to copy the contract address',
+      statsLoading: st.status === 'loading',
+      statsReady: st.status !== 'loading',
+      statsPrice: st.price || '—',
+      statsMcap: st.mcap || '—'
+    };
+  }
+}
+
+</script>
+
+
+</body></html>
